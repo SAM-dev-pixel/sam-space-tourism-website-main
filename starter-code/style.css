@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  /* border: 1px solid green; */
+}
+:root {
+  --dark: #0b0d17;
+  --gray: #d0d6f9;
+  --white: #ffffff;
+}
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  /* font-family: "Bellefair", serif; */
+  background-image: url(assets/home/background-home-mobile.jpg);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-txt-contain {
+  color: var(--gray);
+  text-align: center;
+}
+.home-title {
+    font-size: 5rem;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.explore-btn {
+    color: var(--dark);
+    margin: auto;
+    text-align: center;
+    background-color: var(--gray);
+    display: inline-block;
+    border: 1px solid green;
+}
