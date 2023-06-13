@@ -39,10 +39,35 @@ body {
   right: 0;
   bottom: 0;
   left: 32%;
-  background-color: var(--gray);
+  background-color: rgb(208, 215, 249, 0.075);
+  backdrop-filter: blur(2rem);
+  transform: translateX(100%);
+  transition: 0.25s;
 }
 .nav-link {
   margin-left: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link a {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.nav-link a span {
+  font-weight: 300;
+}
+.nav-dash {
+  width: 0.25rem;
+  height: 1.875rem;
+  display: none;
+  background-color: var(--white);
+}
+.nav-link.active .nav-dash {
+  display: initial;
 }
 .hamburger-btn {
   z-index: 9999;
