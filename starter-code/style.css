@@ -16,12 +16,24 @@ ul {
   list-style: none;
 }
 body {
+  min-height: 100vh;
   font-family: "Barlow Condensed", sans-serif;
   /* font-family: "Bellefair", serif; */
   padding: 1.5rem;
+  background-color: var(--gray);
   background-image: url(assets/home/background-home-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (width >= 48rem) {
+  body {
+    background-image: url(assets/home/background-home-tablet.jpg);
+  }
+}
+@media (width >= 64rem) {
+  body {
+    background-image: url(assets/home/background-home-desktop.jpg);
+  }
 }
 /* NAV BAR STYLE START */
 .navbar {
@@ -72,6 +84,22 @@ body {
 .hamburger-btn {
   z-index: 9999;
 }
+@media (width >= 48rem) {
+  .nav-links-contain {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: initial;
+    transform: translateX(0);
+  }
+  .nav-link {
+    /* display: initial; */
+  }
+  .hamburger-btn {
+    display: none;
+  }
+}
 /* NAV BAR STYLE END */
 
 /* HOME PAGE STYLE START */
@@ -80,24 +108,38 @@ body {
   color: var(--gray);
   text-align: center;
 }
+.sub-title {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
 .home-title {
   padding: 2.1875rem 0;
-  font-size: 5rem;
+  /* font-size: 5rem; */
+  font-size: clamp(0.2rem, 21.32vw, 9.375rem);
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-.explore-btn-contain {
-  text-align: center;
+.home-txt {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  letter-spacing: 0.075rem;
+  line-height: 1.8;
 }
 .explore-btn {
-  padding: 2em;
+  width: 9.375rem;
+  height: 9.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   font-size: 1.25rem;
   font-family: "Bellefair", serif;
   text-transform: uppercase;
   color: var(--dark);
-  background-color: var(--gray);
-  display: inline-block;
+  background-color: var(--white);
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
