@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <link rel="stylesheet" href="css/destinations.css" />
 
-  01 Pick your destination
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
-</body>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <header id="header-container">
+      <nav class="navbar">
+        <a href="index.html" class="logo"
+          ><img src="assets/shared/logo.svg" alt="Space tourism"
+        /></a>
+        <ul class="nav-links-contain">
+          <li class="nav-link active">
+            <a href="index.html">00 <span>Home</span></a>
+            <div class="nav-dash"></div>
+          </li>
+          <li class="nav-link">
+            <a href="destination-moon.html">01 <span>Destination</span></a>
+            <div class="nav-dash"></div>
+          </li>
+          <li class="nav-link">
+            <a href="crew-pilot.html">02 <span>Crew</span></a>
+            <div class="nav-dash"></div>
+          </li>
+          <li class="nav-link">
+            <a href="technology-vehicle.html">03 <span>Technology</span></a>
+            <div class="nav-dash"></div>
+          </li>
+        </ul>
+        <img
+          src="assets/shared/icon-hamburger.svg"
+          alt=""
+          class="hamburger-btn"
+        />
+      </nav>
+    </header>
+    <main id="destination-main-container">
+      <h1 class="destination-title"><span>01</span> Pick your destination</h1>
+      <div class="destination-contain">
+        <img
+          src="assets/destination/image-mars.webp"
+          alt="moon destination image"
+          class="destination-img"
+        />
+        <div class="destination-explain-wrapper">
+          <ul class="destination-choices">
+            <li><a href="destination-moon.html">Moon</a></li>
+            <li class="active"><a href="destination-mars.html">Mars</a></li>
+            <li><a href="destination-europa.html">Europa</a></li>
+            <li><a href="destination-titan.html">Titan</a></li>
+          </ul>
+        </div>
+        <h2 class="destination-subtitle">Mars</h2>
+        <p class="destination-explain">
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
+        <div class="distance-time-wrapper">
+          <div class="distance-wrapper">
+            <p class="distance-title">Avg. distance</p>
+            <p class="distance-txt">225 mil. km</p>
+          </div>
+          <div class="time-wrapper">
+            <p class="time-title">Est. travel time</p>
+            <p class="time-txt">9 months</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
