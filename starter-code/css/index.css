@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  /* border: 1px solid green; */
 }
 :root {
   --dark: #0b0d17;
@@ -86,6 +85,10 @@ body {
   z-index: 9999;
 }
 @media (width >= 48rem) {
+  #header-container {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+  }
   .nav-links-contain {
     height: 100% !important;
     padding-top: 0;
@@ -98,7 +101,6 @@ body {
   .nav-link {
     padding-block: 2.4375em;
     position: relative;
-    /* display: initial; */
   }
   .nav-dash {
     width: 100%;
@@ -119,38 +121,32 @@ body {
   text-align: center;
 }
 .sub-title {
-  /* font-size: 1rem; */
-  font-size: clamp(.2rem, 4.25vw, 1.75rem);
+  font-size: clamp(0.2rem, 4.25vw, 1.75rem);
   font-weight: 300;
   letter-spacing: 0.075rem;
   text-transform: uppercase;
 }
 .home-title {
   padding: 2.1875rem 0;
-  /* font-size: 5rem; */
   font-size: clamp(0.2rem, 21.32vw, 9.375rem);
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 .home-txt {
-  /* font-size: 0.9375rem; */
-  font-size: clamp(.2rem, 3.98vw, 1rem);
+  font-size: clamp(0.2rem, 3.98vw, 1rem);
   font-weight: 300;
   letter-spacing: 0.075rem;
   line-height: 1.8;
 }
 .explore-btn {
-  /* width: 9.375rem;
-  height: 9.375rem; */
   width: clamp(1rem, 40vw, 17.125rem);
   height: clamp(1rem, 40vw, 17.125rem);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  /* font-size: 1.25rem; */
-  font-size: clamp(.2rem, 4.75vw, 2rem);
+  font-size: clamp(0.2rem, 4.75vw, 2rem);
   font-family: "Bellefair", serif;
   text-transform: uppercase;
   color: var(--dark);
@@ -158,10 +154,30 @@ body {
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
-@media(width >= 48rem) {
+@media (width >= 48rem) {
   .home-txt-contain {
     width: 58%;
     margin: auto;
+  }
+}
+@media (width >= 64rem) {
+  #header-container {
+    margin-bottom: 8rem;
+  }
+  #home-main-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-txt-contain {
+    width: 60%;
+    margin: initial;
+    text-align: start;
+  }
+  .explore-btn-contain {
+    margin-top: auto;
   }
 }
 /* HOME PAGE STYLE END */
