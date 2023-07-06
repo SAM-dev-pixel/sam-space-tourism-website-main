@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  /* border: 1px solid green; */
 }
 :root {
   --dark: #0b0d17;
@@ -18,7 +17,6 @@ ul {
 body {
   min-height: 100vh;
   font-family: "Barlow Condensed", sans-serif;
-  /* font-family: "Bellefair", serif; */
   padding: 1.5rem;
   background-color: var(--gray);
   background-image: url(../assets/destination/background-destination-mobile.jpg);
@@ -103,7 +101,6 @@ body {
   .nav-link {
     padding-block: 2.4375em;
     position: relative;
-    /* display: initial; */
   }
   .nav-dash {
     width: 100%;
@@ -138,7 +135,6 @@ body {
   padding-right: 1.125em;
 }
 .destination-img {
-  /* width: 10.625rem; */
   width: clamp(5rem, 45vw, 27.8rem);
   margin: 2rem 0;
 }
@@ -167,7 +163,6 @@ body {
 }
 .destination-subtitle {
   font-family: "Bellefair", serif;
-  /* font-size: 3.5rem; */
   font-size: clamp(0.25rem, 15vw, 6.25rem);
   font-weight: 400;
   color: var(--white);
@@ -201,11 +196,14 @@ body {
   color: var(--white);
 }
 @media (width >= 48rem) {
+  .destination-title {
+    margin-left: 2rem;
+    text-align: start;
+  }
   .destination-choices a {
     font-size: 1rem;
   }
   .distance-time-wrapper {
-    margin: ;
     justify-content: center;
     flex-direction: row;
   }

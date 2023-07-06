@@ -132,7 +132,8 @@ body {
   padding-right: 1.125em;
 }
 .crew-img {
-  width: 11.0625rem;
+  /* width: 11.0625rem; */
+  width: clamp(6rem, 47vw, 35.5rem);
   margin: 2rem 0;
 }
 .dot-wrapper {
@@ -168,5 +169,30 @@ body {
   color: var(--gray);
   letter-spacing: 0.075rem;
   line-height: 1.8;
+}
+@media (width >= 48rem) {
+  #crew-main-container {
+    height: 100%;
+  }
+  .crew-contain {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .crew-explain-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .dot-wrapper {
+    order: 3;
+  }
+  
+}
+@media (width >= 64rem) {
+  .dot {
+    width: .9375rem;
+    height: .9375rem;
+  }
 }
 /* MAIN STYLE END */
